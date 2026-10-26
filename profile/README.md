@@ -54,12 +54,17 @@ Telefon çalar, siz müşterinizle ilgilenirken açamazsınız — randevu kaça
 
 ```mermaid
 flowchart LR
-    A["📞 Müşteri arar"] --> B["🤖 Esnaf Ses karşılar"]
-    B --> C["🗣️ Gün, saat ve isim<br/>doğal konuşmayla alınır"]
-    C --> D["📅 Takvimde uygunluk<br/>kontrol edilir"]
-    D --> E["✅ Özet okunur,<br/>müşteri onaylar"]
-    E --> F["🗓️ Randevu kaydedilir"]
+    A["📞 Arama"] --> B["🗣️ Konuşma"]
+    B --> C["📅 Uygunluk"]
+    C --> D["✅ Onay"]
+    D --> E["🗓️ Kayıt"]
 ```
+
+1. **Arama** — Müşteri işletmenizi arar, Esnaf Ses karşılar.
+2. **Konuşma** — Gün, saat ve isim doğal Türkçe konuşmayla alınır.
+3. **Uygunluk** — Takvimde boş saat kontrol edilir, gerekirse alternatif önerilir.
+4. **Onay** — Randevu özeti okunur, müşteri onaylar.
+5. **Kayıt** — Randevu takviminize yazılır.
 
 ## 🛡️ İlkelerimiz
 
